@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="icon" href="images/1122.png">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Josefin+Sans:wght@100..700&family=Poppins:wght@100..900&family=Smooch+Sans&family=Work+Sans:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="right-panel">
+            <h2>SIGN IN</h2>
+            <form id="signinForm">
+                <div class="log">
+                    <input id="txt-t" type="text" placeholder="First name" required>
+                    <input id="txt-t" type="text" placeholder="Last name">
+                    <input id="email" type="email" placeholder="Email" required>
+                    <input id="pass" type="password" placeholder="Password" required>
+                    <input id="re-pass" type="password" placeholder="Re-enter your password" required>
+                    <p id="error-message" class="e-mess"></p>
+                </div>
+                <div  class="terms">
+                    <input id="checkbox" type="checkbox"> <p>I agree to the <a href="#">Terms and Conditons</a></p>
+                </div>
+                <p id="error-mess" class="e-mess"></p>
+                <button class="btn-n" type="submit">SIGN IN</button>
+            </form>
+            
+            <div class="social-icons">
+                <a href="#" class="google"><i class="fab fa-google"></i></a>
+                <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p id="re-dir">Alredy Have account?<a href="login.html">Login</a></p>
+        </div>
+    </div>
+    <script src="signup.js"></script>
+</body>
+</html>

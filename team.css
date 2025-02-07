@@ -1,0 +1,414 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "work sans", serif;
+    font-style: normal;
+}
+
+body {
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background: #29514F;
+    padding: 4px 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Nav bar */
+.logo img {
+    width: 250px;
+}
+
+.nav-links {
+    margin-left: 300px;
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    justify-content: right;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.btn-b1 {
+    padding: 5px 20px;
+    margin-left: 80px;
+    background: none;
+    border: 1px solid #1AE9DE;
+    border-radius: 3px;
+}
+
+.btn-b a{
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+}
+
+.btn-b1:hover{
+    background: #1AE9DE ;
+    border: 1px solid #1AE9DE;
+    transition: 1s;
+}
+
+.btn-b{
+    padding: 5px 20px;
+    background: #1AE9DE;
+    margin-left: 20px;
+    border: 1px solid #1AE9DE;
+    border-radius: 3px;
+}
+
+.btn-b1 a{
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+}
+
+
+.menu-toggle {
+    display: none;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}
+
+.nav-links a:hover {
+    color: #1AE9DE;
+    transition: 1s;
+}
+
+/* Work section */
+
+.work-main{
+    width: 100%;
+    padding-top: 100px;
+    z-index: -1;
+}
+
+.work-main h2{
+    font-size: 2.5rem;
+}
+
+.work-edit{
+    display: flex;
+    flex-direction: row;
+}
+
+.cont-ent{
+    width: 100vh;
+    height: 80vh;
+    padding-top: 10vh;
+    background: rgba(221, 221, 221, 60%);
+    align-items: center;
+    padding: 5px 20px;
+    border: 3px solid rgb(198, 197, 197, 80%);
+    border-radius: 5px;
+}
+
+.cont-ent h3{
+    font-size: 25px;
+    font-weight: 400px;
+    padding: 30px 0;
+}
+
+.cont-ent p{
+    font-size: 20px;
+    line-height: 35px;
+}
+
+.ima-ge {
+    display: block;
+    width: 50vh;
+    height: 80vh;
+    margin-left: 100px;
+}
+
+.work-pics {
+    width: 100%;
+    height: 100vh;
+    background: white;
+    z-index: -1;
+}
+
+.work-edit2 {
+       padding-top: 120px;
+       display: flex;
+}
+
+.ima-ge2 {
+    width: 50vh;
+    height: 70vh;
+}
+
+.cont-ent2 {
+    background:rgba(221, 221, 221, 50%);
+    align-items: center;
+    padding: 5px 20px;
+    width: 100vh;
+    height: 70vh;
+    margin-left: 100px;
+    border: 3px solid rgb(198, 197, 197, 80%);
+    border-radius: 5px;
+}
+
+.cont-ent2 h3{
+    font-size: 30px;
+    padding: 30px 0;
+}
+
+.cont-ent2 p{
+    font-size: 20px;
+    line-height: 35px;
+}
+
+
+/* OUR TEAM */
+.team-info{
+    width: 100%;
+    height: 120vh;
+}
+
+.tx-t {
+    font-size: 50px;
+    padding-top: 60px;
+    justify-content: center;
+    text-align: center;
+}
+
+.ma-in{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 80px 0px;
+    gap: 30px;
+}
+
+.ima-gess{
+    justify-content: center;
+    width: 200px;
+    height: 250px;
+    /* overflow: hidden; */
+    background: #1AE9DE;
+    border: 3px solid rgb(77, 77, 77);
+    border-radius:7px ;
+    transition: all .3s ease-out;
+}
+
+.ima-gess:hover{
+    scale: 1.05;
+}
+
+.ima-gess img{
+    margin: 0;
+    width: 200px;
+    position: absolute;
+    transition: all 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) ;
+}
+
+
+.ima-gess img.default{
+    margin: 0;;
+    opacity: 1;
+}
+
+.ima-gess img.hover{
+    width: 200px;
+    opacity: 0;
+}
+
+.ima-gess:hover img.default{
+    opacity: 0;
+    margin: 0;
+}
+
+.ima-gess:hover img.hover{
+    transform: scale(1.05);
+    opacity: 1;
+    margin: 0;
+}
+
+.team-con{
+    color: black;
+    width: 200px;
+    margin-top: 210px;
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: 1s top ease-in-out;
+}
+
+.team-con p{
+    font-size: 12px;
+}
+
+.ima-gess:hover .team-con {
+    opacity: 1;
+}
+
+.social-icons {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+    opacity: 0;
+    margin-left: 165px;
+}
+
+.social-icons a {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+    
+}
+
+.social-icons a.instagram::before {
+    content: 'I';
+    display: block;
+    text-align: center;
+}
+
+.social-icons a.linkedin::before {
+    content: 'L';
+    display: block;
+    text-align: center;
+}
+.social-icons a:first-child:hover{
+    color: #E1306C;
+    font-size: 25px;
+    transition:  ease-out;
+}
+.social-icons a:hover{
+    color:#0077B5;
+    font-size: 25px;
+    transition:  ease-out;
+}
+.ima-gess:hover .social-icons{
+    opacity: 1;
+}
+
+
+
+/* footer section */
+
+.animated-footer {
+    width: 100%;
+    height: 50vh;
+    background: #29514F;
+    position: relative;
+    color: white;
+    overflow: hidden;
+}
+
+.footer-container {
+    padding: 20px 20px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
+}
+
+.footer-col {
+    flex: 1 1 calc(33.333% - 30px);
+    min-width: 280px;
+    text-align: center;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.footer-col h4 {
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+    color: #1AE9DE;
+}
+
+.footer-col p, .footer-col ul {
+    font-size: 14px;
+    line-height: 1.6;
+
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #1AE9DE;
+}
+
+.social-icon {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-icon .icon{
+    width: 60px;
+    height: 60px;
+    text-decoration: none;
+    background: rgba(221, 191, 191, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.social-icon .icon:hover {
+    background: #1AE9DE;
+    transform: scale(1.2);
+    color: rgb(0, 0, 0);
+}
+
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 30px;
+    font-size: 0.9rem;
+}
+
+.footer-bottom p{
+    font-size: 12px;
+
+}

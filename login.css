@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+}
+
+.right-panel {
+    background: white;
+    width: 380px;
+    height: 450px;
+    box-shadow: 2px 3px 30px rgb(145, 145, 145);
+    border: 2px solid gray;
+    border-radius: 8px;
+}
+
+.right-panel h2 {
+    font-weight: 600;
+    padding: 30px;
+}
+
+
+.log input{
+    width: 250px;
+    height: 30px;
+    margin: 10px 0;
+    padding-left: 4px;
+}
+
+
+.terms a{
+    font-size: 12px;
+    margin-left: 160px;
+    color: #1AE9DE;
+    text-decoration: none;
+}
+
+.terms a:hover {
+    text-decoration: underline;
+}
+
+#error-message{
+    font-size: 12px;
+}
+
+.btn-n {
+    width: 250px;
+    height: 35px;
+    margin-top: 20px;
+    background: #1AE9DE;
+    border: 1px solid gray;
+    border-radius: 2px;
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+    color: white;
+}
+
+#uuuu{
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+
+.social-icons {
+    padding: 20px;
+}
+
+
+.social-icons a{
+    font-size: 20px;
+    padding: 10px;
+    color: #1AE9DE;
+    background: gray;
+    border-radius: 100%;
+    margin: 5px;
+    
+}
+
+
+.social-icons a:hover {
+    color: black;
+    background: #1AE9DE;
+    transition: .5s ease-in-out;
+}
+
+#llll{
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+#llll a{
+    color: #1AE9DE;
+    text-decoration: none;
+}
+
+#llll a:hover{
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}
