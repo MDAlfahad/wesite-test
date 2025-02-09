@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
     font-family: "work sans", serif;
     font-style: normal;
 }
@@ -91,17 +92,6 @@ body {
     transition: 1s;
 }
 
-#profile-pic{
-    display: flex;
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin: 0;
-    padding: 0;
-    margin-left:270px;
-}
-
 /* home section */
 .section-home {
     height: 115vh;
@@ -169,15 +159,16 @@ body {
     width: 100%;
     display: flex;
     color: white;
+    background: #29514F;
     position: relative;
 }
 
-.section-explore .explore-image {
+/* .section-explore .explore-image {
     width: 100%;
     height: 110vh;
     position:absolute;
     z-index: -1;
-}
+} */
 
 .explore-content {
     z-index: 1;
@@ -218,30 +209,124 @@ body {
 /* what we do section */
 .What-we-do {
     width: 100%;
-    height: 110vh;
+    padding: 30px;
     background: white;
 }
 
+.what-head{
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.what-heading span {
+    color: #1AE9DE;
+}
+
+
+.contents{
+    display: flex;
+}
+.img-ed {
+    width: 400px;
+    margin: 50px 20px;
+}
+
 .What-we-do .what-heading {
-    font-size: 3rem;
-    font-weight: 500;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-top: 50px;
     margin-left: 50px;
     color: black;
 }
 
 .what-head .contents h2 {
+    line-height: 80px;
+    max-width: 70%;
     margin-left: 50px;
     padding-top: 50px;
-    font-weight: 500;
+    font-weight: 600;
+    font-size: 30px;
     color: black;
 }
 
 .What-we-do .what-head .what-para {
-    font-size: 16px;
-    max-width: 40%;
+    font-size: 20px;
+    max-width: 60%;
+    line-height: 40px;
     margin-left: 50px;
     color: black;
 }
+
+.what-para span {
+    font-size: 30px;
+    color: #29514F;
+}
+
+.contentss{
+    display: flex;
+    margin-top: 150px;
+}
+.img-ee {
+    width: 400px;
+    margin-left: 50px;
+}
+
+.what-head .contentss h2 {
+    max-width: 70%;
+    margin-left: 350px;
+    font-weight: 600;
+    font-size: 30px;
+    color: black;
+}
+
+.What-we-do .contentss .what-para {
+    font-size: 20px;
+    max-width: 60%;
+    margin-left: 350px;
+    line-height: 40px;
+    color: black;
+}
+
+
+/* anime */
+.hidden {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.hidden-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.show-left {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+.hidden-right {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.show-right {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+.text {
+    transition-delay: 0.2s;
+}
+
 
 /* footer section */
 
