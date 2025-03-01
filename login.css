@@ -23,7 +23,7 @@ body {
     width: 380px;
     height: 450px;
     box-shadow: 2px 3px 30px rgb(145, 145, 145);
-    border: 2px solid gray;
+    border: 2px solid #1AE9DE;
     border-radius: 8px;
 }
 
@@ -32,14 +32,32 @@ body {
     padding: 30px;
 }
 
+.log {
+    border: 1.5px solid #1AE9DE;
+    max-width:300px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin: 15px 35px;
+}
 
 .log input{
     width: 250px;
     height: 30px;
-    margin: 10px 0;
-    padding-left: 4px;
+    margin: 5px 0;
+    border: none;
 }
 
+input:focus, textarea:focus {
+    border-color: #1AE9DE;
+    outline: none;
+}
+
+.log i{
+    color: #1AE9DE;
+    cursor: pointer;
+}
 
 .terms a{
     font-size: 12px;
@@ -57,16 +75,22 @@ body {
 }
 
 .btn-n {
-    width: 250px;
+    width: 300px;
     height: 35px;
     margin-top: 20px;
     background: #1AE9DE;
-    border: 1px solid gray;
+    border: 1px solid #1AE9DE;
     border-radius: 2px;
     font-weight: 600;
     font-size: 18px;
     cursor: pointer;
     color: white;
+    transition: 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.btn-n:hover{
+    background: #29514F;
+    border: 1px solid #29514F;
 }
 
 #uuuu{
@@ -81,10 +105,10 @@ body {
 
 
 .social-icons a{
-    font-size: 20px;
-    padding: 10px;
-    color: #1AE9DE;
-    background: gray;
+    font-size: 16px;
+    padding: 9px 10px;
+    color: #272727;
+    background: #1AE9DE;
     border-radius: 100%;
     margin: 5px;
     
@@ -92,9 +116,9 @@ body {
 
 
 .social-icons a:hover {
-    color: black;
-    background: #1AE9DE;
-    transition: .5s ease-in-out;
+    color: #fff;
+    background: #29514F;
+    transition: .2s ease-in-out;
 }
 
 #llll{

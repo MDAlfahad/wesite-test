@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "work sans", serif;
+    font-style: normal;
 }
 
 body {
@@ -174,7 +176,7 @@ input:focus, textarea:focus {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding:100px 50px ;
+    padding:100px 50px;
 }
 
 .co-ntact {
@@ -188,7 +190,6 @@ input:focus, textarea:focus {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 30px 0;
     background: #29514F;
     border-radius: 10px;
     box-shadow: 3px 4px 20px rgba(0, 0, 0, 0.2);
@@ -294,7 +295,7 @@ input:focus, textarea:focus {
 }
 
 .footer-col p, .footer-col ul {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.6;
 
 }
@@ -315,7 +316,7 @@ input:focus, textarea:focus {
 }
 
 .footer-col ul li a:hover {
-    color: #F29F58;
+    color: #1AE9DE;
 }
 
 .social-icon {
@@ -357,4 +358,197 @@ input:focus, textarea:focus {
 .footer-bottom p{
     font-size: 14px;
 
+}
+
+
+@media (max-width :768px) {
+    .con-te-t {
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        margin: 0;
+        padding: 10px 0;
+    }
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0 10px;
+    }
+    .news-let {
+        justify-content: center;
+        align-items: center;
+        margin-left: 40px;
+    }
+    .ia-gee img {
+        padding: 0;
+        margin-left: 0;
+        display: none;
+    }
+    /* other section */
+    .other {
+        display: flex;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        gap: 20px;
+    }
+    .co-ntact{
+        padding: 0;
+        margin: 0;
+        margin-top: 50px;
+    }
+    
+    .ma-iin{
+        width: 220px;
+        height: 160px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background: #29514F;
+        border-radius: 10px;
+        box-shadow: 3px 4px 20px rgba(0, 0, 0, 0.2);
+    }
+    
+    .co-ntact img {
+        margin-top: 10px;
+        width: 50px;
+    }
+    
+    .co-ntact h2 {
+        font-size: 16px;
+        font-weight: 500;
+        color: #1AE9DE;
+    }
+    
+    .co-ntact p{
+        margin-top: 10px;
+        color: white;
+        padding: 0 10px;
+        font-size: 14px;
+    }
+
+    .map h1 {
+        font-size: 40px;
+        width: 100%;
+    }
+    .map-container {
+        width: auto;
+        margin: 0 10px;
+        padding: 0;
+       height: 100vh;
+    }
+    /* footer section */
+
+    .animated-footer {
+        height: auto;
+    }
+    .footer-col .spr-t {
+        display: none;
+    }
+    .footer-col ul li {
+        display: none;
+    }
+    .footer-bottom p{
+        margin: 5px 0;
+        color: var(--text-color);
+    }
+}
+
+@media (max-width :480px) {
+    .con-te-t {
+        justify-content: center;
+        align-items: center;
+        height: 130vh;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0 10px;
+    }
+    .news-let {
+        justify-content: center;
+        align-items: center;
+        margin-left: 40px;
+    }
+    .ia-gee img {
+        padding: 0;
+        margin-left: 0;
+        display: none;
+    }
+    /* other section */
+    .other {
+        display: block;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .co-ntact{
+        padding: 0;
+        margin: auto;
+        margin-left: 30px;
+        margin-top: 50px;
+    }
+
+    .ma-iin{
+        width: 300px;
+        height: 200px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background: #29514F;
+        border-radius: 10px;
+        box-shadow: 3px 4px 20px rgba(0, 0, 0, 0.2);
+    }
+    
+    .co-ntact img {
+        margin-top: 10px;
+        width: 60px;
+    }
+    
+    .co-ntact h2 {
+        font-size: 18px;
+        font-weight: 500;
+        color: #1AE9DE;
+    }
+    
+    .co-ntact p{
+        margin-top: 10px;
+        color: white;
+        padding: 0 10px;
+        font-size: 16px;
+    }
+
+    /* map */
+    .map h1 {
+        font-size: 30px;
+        width: 100%;
+    }
+    .map-container {
+        width: auto;
+        margin: 0 10px;
+        padding: 0;
+       height: 100vh;
+    }
+    /* footer section */
+
+    .animated-footer {
+        height: auto;
+    }
+    .footer-col .spr-t {
+        display: none;
+    }
+    .footer-col ul li {
+        display: none;
+    }
+    .footer-bottom p{
+        margin: 5px 0;
+        color: var(--text-color);
+    }
 }

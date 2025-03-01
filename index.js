@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Smooth scrolling for navbar links (Only for same-page links)
     document.querySelectorAll(".nav-links a, .logo a").forEach(link => {
         if (link.getAttribute("href").startsWith("#")) {
             link.addEventListener("click", event => {
@@ -11,14 +10,9 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         }
     });
-
-    // Mobile menu toggle
-    document.querySelector(".menu-toggle").addEventListener("click", function () {
-        document.querySelector(".nav-links").classList.toggle("active");
-    });
 });
 
-// Intersection Observer for fade-in animations
+
 const observer = new IntersectionObserver(
     entries => {
         entries.forEach(entry => {
@@ -30,21 +24,25 @@ const observer = new IntersectionObserver(
     { threshold: 0.3 }
 );
 
-document.querySelectorAll('.section-home, .section-explore, .animated-footer').forEach(section => {
+document.querySelectorAll('.animated-footer').forEach(section => {
     section.classList.add('fade-in-hidden');
     observer.observe(section);
 });
 
-// Logging messages for debugging
-console.log("Interactive Team Section Loaded!");
-console.log("Footer loaded successfully!");
+// nav to footter
 
-function toggleMenu() {
-    document.querySelector('.nav-links').classList.toggle('active');
+let menuIcon = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar')
+
+menuIcon.onclick = () => {
+    menuIcon.classList.toggle('bx-x');
+    navbar.classList.toggle('active');
 }
 
+let section = document.querySelectorAll('section');
+let navLink =document.querySelectorAll('header nav a');
 
-
+// what we do section
 document.addEventListener("DOMContentLoaded", function () {
     const elements = document.querySelectorAll(".hidden");
     const leftImages = document.querySelectorAll(".hidden-left");
@@ -77,4 +75,28 @@ document.addEventListener("DOMContentLoaded", function () {
     elements.forEach((el) => observer.observe(el));
     leftImages.forEach((img) => leftObserver.observe(img));
     rightImages.forEach((img) => rightObserver.observe(img));
+});
+
+
+
+// how work section animation
+
+document.addEventListener("DOMContentLoaded", function () {
+    const workItems = document.querySelectorAll(".wor-ks");
+
+    const observer = new IntersectionObserver(
+        (entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("show");
+                    observer.unobserve(entry.target);
+                }
+            });
+        },
+        { threshold: 0.3 }
+    );
+
+    workItems.forEach(item => {
+        observer.observe(item);
+    });
 });

@@ -18,6 +18,7 @@ document.getElementById("signinForm").addEventListener("submit", function(event)
         errorMessage.style.color = "red";
         return;
     }
+
     
     if (!checkbox.checked) {
         errorMess.textContent = "You must agree to the Terms and Conditions.";

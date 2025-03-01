@@ -8,75 +8,135 @@
     <link rel="icon" href="images/1122.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Josefin+Sans:wght@100..700&family=Poppins:wght@100..900&family=Smooch+Sans&family=Work+Sans:wght@100..900&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
 </head>
 <body>
-    <header>
-            <nav class="navbar">
-                <div class="logo"><a href="#home"><img src="images/129821.png"></a></div>
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#">Explore</a></li>
-                    <li><a href="team.html">About us</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-                <button class="btn-b1"><a href="signup.html">Signup</a></button>
-                <button class="btn-b"><a href="login.html">Login</a></button>
-                <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
-            </nav>
+    <header class="header">
+        <a href="#" class="logo"><img src="images/Logo12.png" ><span class="animate" style="--i:1;"></span></a>
+
+        <div class=" bx bx-menu" id="menu-icon"><span class="animate" style="--i:2;"></span></div>
+
+        <nav class="navbar">
+            <a href="#Explore">Explore</a>
+            <a href="team.html">About Us</a>
+            <a href="contact.html">Contact</a>
+
+            <span class="active-nav"></span>
+            <span class="animate" style="--i:2;"></span>
+
+        </nav>  
     </header>
 
-    <section id="home" class="section-home">
-        <!-- <video autoplay muted loop class="home-video">
-            <source src="images/Kb.mkv" type="video/mp4">
-        </video> -->
+     <!-- home section -->
+     <section id="home" class="section-home">
         <div class="home-content">
             <h1 class="home-heading"> <span>Innovating</span><br>the fabric of Future</h1>
             <p class="home-description">TechOwear is designed to address the critical issue of safety by providing a smart, wearable solution that combines convenience and effectiveness.</p>
-            <button  class="home-cta"><a href="#">Explore</a></button>
-        </div>
-    </section>
-        <!-- explore section -->
-    <section id="Explore" class="section-explore">
-        <!-- <img src="images/56543.jpg" class="explore-image"> -->
-        <div class="explore-content">
-            <h2 class="explore-heading">Explore Techowear</h2>
-            <p class="explore-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et sapien euismod, tristique ligula ac, faucibus lacus.</p>
-            <a href="#" class="explore-cta">Get in Touch</a>
+            <div class="btn-box">
+                <a href="login.html" class="btn">LOGIN</a>
+                <a href="signup.html" class="btn">SIGN IN</a>
+                <span class="animate" style="--i:5;"></span>
+            </div>
+            
+            <div class="sociall-icon">
+                <a href="https://www.instagram.com/techowear_11/" target="_blank" class="icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/techowear-inventors/" target="_blank" class="icon"><i class="fab fa-linkedin"></i></a>
+                <a href="https://x.com/TechOwear_11" target="_blank" class="icon"><i class="fab fa-twitter"></i></a>
+                
+            </div>
         </div>
     </section>
 
-    <!-- What we Do Section -->
+    <!-- explore section -->
+    <section id="Explore" class="section-explore">
+        <div class="explore-content">
+            <h2 class="explore-heading">Techowear</h2>
+        </div>
+        <div class="k-kr">
+            <div class="cont-net">
+                <div class="lett-er"></div>
+                <p class="explore-description">Take care of yourself before you have to.</p>
+                <p class="explore-descriptions">The TechOwear will provide you the Right Help</p>
+
+            </div> 
+
+            <div class="dimen-sion">
+                <model-viewer src="pro-ducct.glb"
+                auto-rotate 
+                autoplay
+                animation-name = "*">
+                </model-viewer>
+            </div>
+
+            <div class="cont-net">
+                <div class="lett-er"></div>
+                <p class="explore-description">Take care of yourself before you have to.</p>
+                <p class="explore-descriptions">The TechOwear will provide you the Right Help</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- what we do section -->
+
     <section id="We-do" class="What-we-do hidden">
         <div class="what-head">
-            <h1 class="what-heading"><span>WHY</span> TECHOWEAR</h1>
+            <h1 class="what-heading"><span></span> </h1>
             <div class="contents">
-                <div class="text hidden">
+                <div class="text-hidden">
                     <h2>Life-saving Safety Features</h2>
                     <p class="what-para"><span>◈</span>Live GPS tracking - Lets family and emergency responders track the user's real-time location. <br>
                         <span>◈</span>SOS Alert - Instantly notifies emergency contacts and security authorities during distress. <br>
                         <span>◈</span>Pulse monitoring - Detects abnormal heart rate and sends alerts.</p>
                 </div>
-                <img class="img-ed hidden-left" src="images/what-we-do.jfif">
+                <div class="imh">
+                    <img class="img-e hidden-left" src="images/what-we-do.jfif">
+                </div>
             </div>    
     
             <div class="contentss">
-                <img class="img-ee hidden-right" src="images/what-we-do 1.jfif" alt="">
+                <div class="imh">
+                    <img class="img-ee hidden-right" src="images/what-we-do 1.jfif" alt="">
+                </div>
                 <div class="text hidden">
                     <h2>Ideal for Multiple Uses</h2>
                     <p class="what-para"><span>✓</span>Women's safety - Real-time alerts and tracking for added security. <br>
-                        <span>✓</span>Healthcare & Wellness - Pulse monitoring helps track potential health risks. <br>
-                        <span>✓</span>Outdoor Enthusiasts - Great for hikers, travelers, and athletes who need emergency tracking.</p>
+                    <span>✓</span>Healthcare & Wellness - Pulse monitoring helps track potential health risks. <br>
+                    <span>✓</span>Outdoor Enthusiasts - Great for hikers, travelers, and athletes who need emergency tracking.</p>
                 </div>
             </div>
         </div>
     </section>
-    
 
-     <!-- Footer Section -->
-     <footer id="contact" class="animated-footer">
+    <!-- how work section -->
+
+    <section class="how-work">
+        <h2>HOW IT'S <span>WORKS</span></h2>
+        <div class="how-wor-ks">
+            <div class="wor-ks">
+                <img class="sca-le" src="images/work-click.gif" alt="">
+                <h4>TRIPPLE TAP</h4>
+                <p>Button on top send a quick location shering and emergency alerts </p>
+            </div>
+
+            <div class="wor-ks">
+                <img class="sca-les" src="images/work-location.gif" alt="">
+                <h4>GPS LOCATION</h4>
+                <p> Your location will send to security authority and your love ones</p>
+            </div>
+
+            <div class="wor-ks">
+                <img class="sca-le2" src="images/work-voice.gif" alt="">
+                <h4>VOICE ASSSISTANCE</h4>
+                <p>Quick response through voice assistance</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="contact" class="animated-footer">
         <div class="footer-container">
             <div class="footer-row">
                 
@@ -91,10 +151,10 @@
                 </div>
                 
                 <div class="footer-col">
-                    <h4>SUPPORT</h4>
+                    <h4 class="spr-t">SUPPORT</h4>
                     <ul>
                         <li><a href="contact.html">Help Center</a></li>
-                        <li><a href="#Explore">FAQs</a></li>
+                        <li><a href="FAQs.html">FAQs</a></li>
                         <li><a href="#About-us">Feedback</a></li>
                         <li><a href="contact.html">Contact Us</a></li>
                     </ul>
@@ -117,6 +177,7 @@
     </footer>
 
     <script src="index.js"></script>
-
+    <script type="module" src="https://unpkg.com/@google/model-viewer"></script>
+</body>
 </body>
 </html>

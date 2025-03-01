@@ -23,7 +23,7 @@ body {
     width: 380px;
     height: 500px;
     box-shadow: 2px 3px 30px rgb(145, 145, 145);
-    border: 2px solid gray;
+    border: 2px solid #1AE9DE;
     border-radius: 8px;
 }
 
@@ -33,10 +33,21 @@ body {
 }
 
 .log input{
-    width: 260px;
-    height: 30px;
+    width: 280px;
+    height: 35px;
     margin: 5px 0;
     padding-left: 4px;
+    border: 1px solid #1AE9DE;
+    border-radius: 3px;
+}
+
+.chick{
+    padding: 0 9px;
+}
+
+.log input:focus, textarea:focus {
+    border-color: #1AE9DE;
+    outline: none;
 }
 
 .log #txt-t {
@@ -49,6 +60,7 @@ body {
     font-size: 12px;
     margin-top: 10px;
     text-decoration: none;
+    
 }
 
 .terms  a {
@@ -65,15 +77,20 @@ body {
 }
 
 .btn-n {
-    width: 250px;
+    width: 280px;
     height: 35px;
     margin-top: px;
     background: #1AE9DE;
-    border: 1px solid gray;
+    border: 1px solid #1AE9DE;
     border-radius: 2px;
     font-weight: 600;
     font-size: 18px;
     color: white;
+    transition: 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.btn-n:hover {
+    background: #29514F;
 }
 
 .e-mess {
@@ -88,10 +105,10 @@ body {
 
 
 .social-icons a{
-    font-size: 20px;
-    padding: 10px;
+    font-size: 16px;
+    padding: 8px 10px;
     color: #1AE9DE;
-    background: gray;
+    background: #29514F;
     border-radius: 100%;
     margin: 5px;
     

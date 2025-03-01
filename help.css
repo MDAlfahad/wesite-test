@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.help {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.he-lp input {
+    width: 30%;
+    height: 40px;
+}
+
+.he-lp img{
+    width: 30px;
+    justify-content: center;
+    align-items: center;
+}
